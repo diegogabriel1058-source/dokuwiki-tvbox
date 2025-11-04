@@ -106,43 +106,18 @@ Este projeto é um **exemplo prático de reaproveitamento de hardware** para apr
 🗓️ **Versão:** 1.0  
 📍 **Licença:** MIT 
 
----
-## 🚀 Como Executar
 
-### Pré-requisitos
-- TV Box com **Armbian (Debian 11)** e **mínimo de 400 MB de RAM**.  
-- Conexão na **rede local** (IP fixo recomendado, ex.: `192.168.1.21`).  
+## 💽 Instalação do Sistema Armbian na TV Box
 
-### 🧱 Instalação do Armbian na TV Box (Resumido)
+Antes de configurar o servidor DokuWiki, é necessário preparar sua TV Box com o sistema Armbian.
 
-Como uso TV Boxes (ex.: Cortex-A53, aarch64) como servidores domésticos, o **Armbian** é ideal por sua leveza e suporte a ARM.  
-Baixe do site oficial, flashe no SD e insira na TV Box.
+Se você ainda não tem o sistema instalado, acesse o projeto abaixo para obter:
+- A imagem Armbian pronta para TV Boxes compatíveis  Amlogic S905x
+- Tutoriais de instalação e gravação em SD
+- Passos para configuração de rede e SSH
 
-#### 🔽 Download
-1. Acesse [https://www.armbian.com](https://www.armbian.com).  
-2. Selecione o modelo da sua TV Box (ex.: **Amlogic S905X3** ou **Rockchip RK3328**) usando a ferramenta de seleção automática.  
-3. Baixe a imagem **Debian 11 (Bullseye)** para **aarch64**, ex.:  
-Armbian_23.02.0-trunk_Bullseye_current_5.15.93.img.xz
+👉 [Guia de Instalação do Armbian em TV Box](https://github.com/diegogabriel1058-source/armbian-tvbox-install)
 
-💾 Preparar o Cartão SD
-Use um cartão SD de 8 GB+, classe 10.
-
-No Windows:
-
-Instale o Balena-Etcher.
-
-⚙️ Boot na TV Box
-Insira o SD na TV Box.
-
-Conecte HDMI, teclado/mouse ou use SSH via Ethernet.
-
-O boot leva 1–2 min e expande o filesystem automaticamente.
-
-Login padrão:
-
-Usuário: root
-Senha: 1234
-(mude imediatamente com passwd).
 
 🧩 Instalação do DokuWiki, PHP 5.3 e Samba (Passo a Passo)
 Após o Armbian iniciar, execute os comandos como root.
